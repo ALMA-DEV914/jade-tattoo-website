@@ -66,8 +66,8 @@ input{
  img{
     border: 5px solid white;
 }
-#hero-logo{
-    border-radius: -50%;
+#home-hero{
+    border: none;
 }
       
  @media screen and (max-width:575px) {

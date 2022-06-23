@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import hero from "../assets/images/tattoo-hero.jpg";
+import hero from "../assets/images/hero-logo.jpeg";
 import { Link } from "react-router-dom";
 import icon1 from '../assets/images/studs.png';
 import icon2 from "../assets/images/piercing (2).png";
@@ -22,7 +22,7 @@ const Homepage = () => {
          <Link to="/schedule" ><button className="bg-success">Reserve Your Spot</button></Link>
           </div>
           <div className="col mt-2">
-            <img src={hero} alt="hero-logo" width="100%"/>
+            <img src={hero} alt="hero-logo" width="100%" id="home-hero"/>
           </div>
           </div>
         </div>
