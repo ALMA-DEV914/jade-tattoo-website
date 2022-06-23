@@ -13,7 +13,7 @@ const Nav = () => {
        <div className="col p-2">
        <nav className="text-right">
           <Link to="/">
-            <button className="p-1 m-1  navActive ">Home</button>
+            <button className="p-1 m-1  navActive ">HOME</button>
           </Link>
 
           <Link to="/gallery">

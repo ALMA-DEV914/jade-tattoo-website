@@ -14,6 +14,7 @@
 }
 .navActive{
     font-family: 'Georgia', sans-serif;
+    float: right;
 }
 h1{
     font-family: 'Pacifico', sans-serif;
@@ -25,59 +26,11 @@ h1{
     color: aliceblue;
     
 }
-.rounded-circle{
-    border: 10px solid wheat;
-    
-}
-.card-body{
-    border: 10px solid white;
-    margin-top: 4%;
-    border-radius: 8px;
-}
-.current-page{
-    margin-top: 10%;
-    padding: 15px;
-    
-}
-.pagination{
-   margin: 0 auto;
-   background: bisque;
-   justify-content: center;
-   padding: 8px;
-   
-}
-.pagination_link{
-    background: rgb(11, 96, 124);
-    color: white;
-    padding: 8px 24px;
-    border-radius: 5px;
-    
-}
-.pagination_link:hover{
-    color: white;
-    background: rgb(42, 40, 40);
-}
 .home-hero{
     margin-top: 5%;
 }
-.p-2{
-    float: right;
-}
-.icon{
-    font-size: 2rem;
-    margin: 5px;
-}
-.modal{
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
+
 button{
     padding: 8px 16px;
     background: none;
@@ -110,16 +63,12 @@ input{
     height:500px;
     width:600px;}
 
-.tag {
-        text-align: center;
-    }
-      
-.slick-slide img {
-     margin: auto;
-        width: 50%;
-        height: 50%;
-    }  
-      
+ img{
+    border: 5px solid white;
+}
+#hero-logo{
+    border-radius: -50%;
+}
       
  @media screen and (max-width:575px) {
      .row{
