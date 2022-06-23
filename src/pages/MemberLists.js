@@ -41,10 +41,11 @@ const MemberList = () => {
   return (
 
     <div className="container text-white mt-4 text-center">
+      <h2 className="text-dark">Thank you for scheduling! Your spot was save!</h2>
       <Link to="/schedule">
         <button className="text-dark ">CUSTOMERS-SCHEDULES</button>
       </Link>
-      <Link to="/"><button className="btns"><IoMdReturnLeft/> return home</button></Link>
+      <Link to="/"><button className="btns text-dark"><IoMdReturnLeft/> return home</button></Link>
     
       <div className="container">
         <div className="row">

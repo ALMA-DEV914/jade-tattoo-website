@@ -1,11 +1,12 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import hero from "../assets/images/hero-logo.jpeg";
+import hero from "../assets/images/tattoo-hero.jpg";
 import { Link } from "react-router-dom";
 import icon1 from '../assets/images/studs.png';
 import icon2 from "../assets/images/piercing (2).png";
 import icon4 from "../assets/images/piercing.png";
+import About from "../components/About";
 
 const Homepage = () => {
    return (
@@ -15,19 +16,19 @@ const Homepage = () => {
        <br></br>
        <div className="container d-flex text-white my-3">
          <div className="row">
-         <div className="col-6 mt-4">
-          <h2>Welcome to the Tattoos Hub.</h2>
+         <div className="col mt-4">
+          <h2>Welcome to the Tattoos Hub.</h2><br></br>
           <p>The tattoo is no longer quite the symbol of rebellion and subculture it once was. Tattooing is one of the earliest visual art forms and has served as a means of self-expression for thousands of years. The traditional style, also called old school tattoo style, American traditional tattoo style, classic tattoo style or Western traditional tattoo style, is known for its bold lines, bright colors, and iconic designs like roses, anchors, and gorgeous lady heads.</p><br></br>
-         <Link to="/schedule" ><button className="bg-info">Reserve Your Spot</button></Link>
+         <Link to="/schedule" ><button className="bg-success">Reserve Your Spot</button></Link>
           </div>
           <div className="col mt-2">
-            <img src={hero} alt="hero-logo" width="600px"/>
+            <img src={hero} alt="hero-logo" width="100%"/>
           </div>
           </div>
         </div>
         </div>
       <div className="container text-center mt-4">
-        <h2>What We Do</h2>
+        <h1>What We Do</h1>
           <div className="row">
             <div className="col text-center">
             <img src={icon1} alt="Freepik" width="80px"/>
@@ -45,7 +46,9 @@ const Homepage = () => {
           <p> We have a brosure of design to choose from which you think you will be happy to put in your body. Otherwise we welcome a custom design where you will provide your own photo or sketch. </p>
             </div>
           </div>
-        </div>
+       </div>
+        <About/>
+       
       <Footer />
     </>
   );

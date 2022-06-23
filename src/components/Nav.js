@@ -6,17 +6,17 @@ import {SiArtstation} from 'react-icons/si'
 const Nav = () => {
   //render the page section
   return (
-    <div className="container-fluid bg-dark p-2 d-flex">
-      <div className="col-8">
+    <div className="container-fluid  p-2 justify-content-between">
+      <div className="col">
        <h1 className="text-white"><SiArtstation id="logo"/> Tattoo@Jade </h1>
        </div>
-       <div className="nav p-2">
+       <div className="col p-2">
        <nav className="text-right">
           <Link to="/">
             <button className="p-1 m-1  navActive ">Home</button>
           </Link>
 
-          <Link to="/dashboard">
+          <Link to="/gallery">
             <button className="p-1 m-1 navActive">GALLERY</button>
           </Link>
 

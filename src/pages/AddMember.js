@@ -31,9 +31,11 @@ const AddMember = () => {
   }
 
   return (
-    <div className="container mt-4  mx-auto text-white">
+    <div className="container mt-4  mx-auto">
+      <h2>Wanted to get Tattoo?</h2>
+      <p>Reserved your spot now! Select a better date for you!</p>
       <form className="login-form col-lg-6 bg-dark mx-auto text-left p-3">
-       <h3>SET AN SCHEDULE</h3>
+       <h3 className="text-white">SET AN SCHEDULE</h3>
       <TextField
         label="Name"
         value={values.username}

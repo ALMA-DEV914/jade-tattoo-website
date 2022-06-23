@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-size: large;
+    box-sizing: border-box;
 }
 #logo{
     font-size: 45pt;
@@ -108,3 +109,39 @@ input{
     background:none!important;
     height:500px;
     width:600px;}
+
+.tag {
+        text-align: center;
+    }
+      
+.slick-slide img {
+     margin: auto;
+        width: 50%;
+        height: 50%;
+    }  
+      
+      
+ @media screen and (max-width:575px) {
+     .row{
+         display: block;
+     }
+     .col{
+         width: 100%;
+     }
+     .navActive{
+         width: 100%;
+     }
+     .mapouter{
+        position:relative;
+        text-align:right;
+        height:500px;
+        width: 480px;;
+        
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width: 480px;;}
+     
+ }   

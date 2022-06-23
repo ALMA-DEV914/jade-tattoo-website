@@ -4,7 +4,7 @@ import hero from "../assets/images/hero-logo.jpeg";
 const Footer = () => {
   return (
     <div className="container-fluid bg-dark m-2 p-2 text-white">
-        <div className="container">
+    <div className="container">
       <div className="row">
         <div className="col">
           <h2>About</h2>

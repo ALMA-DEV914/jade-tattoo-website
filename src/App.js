@@ -1,6 +1,6 @@
 import React from "react";
 import Homepage from "./pages/Homepage";
-import Dashboard from "./pages/DashboardPage";
+import Gallery from "./pages/Gallery";
 import { Routes, Route } from "react-router-dom";
 import Logout from "./pages/Logout";
 import MemberList from "./pages/MemberLists";
@@ -12,7 +12,7 @@ function App() {
    
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/gallery" element={<Gallery />} />
       <Route path="/logout" element={<Logout />} />
       <Route path="/schedule" element={<AddMember />} />
       <Route path="/add-member/edit-member/:id" element={<EditMember />}/>
