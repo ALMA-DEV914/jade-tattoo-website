@@ -13,15 +13,14 @@ import pic11 from "../assets/images/pic11.png";
 import pic12 from "../assets/images/pic12.png";
 import pic13 from "../assets/images/tatoo14.png";
 import pic14 from "../assets/images/tatoo16.png";
-import pic15 from "../assets/images/tattoo.jpg"
-
-import Nav from "../components/Nav";
+import pic15 from "../assets/images/tattoo.jpg";
+import Header from "../components/Header";
 
 function Gallery() {
   return (
     <>
       <div className="container-fluid bg-dark">
-        <Nav />
+        <Header/>
 
         <br></br>
         <h1 className="text-white text-center">Welcome to the Gallery</h1>

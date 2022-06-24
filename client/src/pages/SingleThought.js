@@ -25,7 +25,7 @@ const SingleThought = (props) => {
     <div>
       <div className="card mb-3">
         <p className="card-header">
-          <span style={{ fontWeight: 700 }} className="text-dark">
+          <span style={{fontWeight: 700 }} className="text-dark">
             {thought.username}
           </span>{' '}
           thought on {thought.createdAt}

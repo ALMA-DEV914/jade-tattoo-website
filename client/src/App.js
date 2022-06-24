@@ -8,7 +8,6 @@ import { setContext } from '@apollo/client/link/context';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup"
 import SingleThought from "./pages/SingleThought";
-import ThoughtForm from "./components/ThoughtForm";
 import Reviews from "./pages/Reviews";
 import Profile from "./pages/Profile"
 import "./index.css";
@@ -39,15 +38,14 @@ function App() {
    <ApolloProvider client={client}>
     <Router>
     <Routes>
+      <Route path="/" element={<Homepage/>} />
       <Route path="/reviews" element={<Reviews/>}/>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/logout" element={<Logout />} />
+      <Route path="/gallery" element={<Gallery/>} />
+      <Route path="/logout" element={<Logout/>} />
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
-      <Route path="/thought" element={<ThoughtForm/>}/>
       <Route path="/thought/:id" element={<SingleThought/>} />
-      <Route path="/profile/:username?" element={Profile} />
+      <Route path="/profile/:username?" element={<Profile/>} />
     </Routes>
     </Router>
     </ApolloProvider>

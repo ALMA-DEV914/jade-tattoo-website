@@ -50,10 +50,12 @@ const Footer = () => {
         </div>
       </div>
       </div>
+      
       <p className="text-center p-1">
-        Copyright (c) 2021 Copyright Holder All Rights Reserved | This template
+     &copy;{new Date().getFullYear()} Copyright Holder All Rights Reserved | This template
         is made by <i class="fa fa-heart"></i>Alma Aungon Braun
       </p>
+
     </div>
   );
 };

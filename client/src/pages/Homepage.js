@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import hero from "../assets/images/hero-logo.jpeg";
 import { Link } from "react-router-dom";
@@ -7,12 +6,13 @@ import icon1 from '../assets/images/studs.png';
 import icon2 from "../assets/images/piercing (2).png";
 import icon4 from "../assets/images/piercing.png";
 import About from "../components/About";
+import Header from "../components/Header";
 
 const Homepage = () => {
    return (
     <>
       <div className="container-fluid bg-dark">
-          <Nav />
+          <Header/>
        <br></br>
        <div className="container d-flex text-white my-3">
          <div className="row">
