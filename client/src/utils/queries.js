@@ -42,6 +42,11 @@ export const QUERY_USER = gql`
       _id
       username
       email
+      friendCount
+      friends {
+        _id
+        username
+      }
       thoughts {
         _id
         thoughtText
@@ -58,6 +63,7 @@ export const QUERY_ME = gql`
       _id
       username
       email
+      friendCount
       thoughts {
         _id
         thoughtText
@@ -70,6 +76,10 @@ export const QUERY_ME = gql`
           username
         }
       }
+      friends {
+        _id
+        username
+      }
     }
   }
 `;
@@ -80,6 +90,11 @@ export const QUERY_ME_BASIC = gql`
       _id
       username
       email
+      friendCount
+      friends {
+        _id
+        username
+      }
     }
   }
 `;

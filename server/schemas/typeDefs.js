@@ -1,4 +1,3 @@
-// import the gql tagged template function
 const { gql } = require('apollo-server-express');
 
 // create our typeDefs
@@ -44,6 +43,7 @@ type Thought {
         addUser(username: String!, email: String!, password: String!): Auth
         addThought(thoughtText: String!): Thought
         addReaction(thoughtId: ID!, reactionBody: String!): Thought
+        addFriend(friendId: ID!): User
       }
   
 `;

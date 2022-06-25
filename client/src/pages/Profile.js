@@ -35,7 +35,7 @@ const Profile = (props) => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <div className="flex-row mb-3">
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
@@ -46,7 +46,7 @@ const Profile = (props) => {
         <div className="col-12 mb-3 col-lg-8">
           <ThoughtList
             thoughts={user.thoughts}
-            title={`${user.username}'s thoughts...`}
+            title={`${user.username}'s reviews...`}
           />
         </div>
 

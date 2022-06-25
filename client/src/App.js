@@ -9,8 +9,6 @@ import {
 import { setContext } from "@apollo/client/link/context";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-
 import Reviews from "./pages/Reviews";
 import Login from "./pages/Login";
 import SingleThought from "./pages/SingleThought";

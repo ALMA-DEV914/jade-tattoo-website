@@ -19,10 +19,19 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">Me</Link>
-              <a href="/logout" onClick={logout}>
-                Logout
-              </a>
+            <Link to="/">
+                <button className="p-1 m-1 navActive">HOME</button>
+              </Link>
+              <Link to="/gallery">
+                <button className="p-1 m-1 navActive">GALLERY</button>
+              </Link>
+              <Link to="/profile"><button className="p-1 m-1  navActive">PROFILE</button></Link>
+              <Link to="/reviews">
+                <button className="p-1 m-1  navActive">REVIEWS</button>
+              </Link>
+              <Link href="/" onClick={logout}>
+              <button className="p-1 m-1  navActive">LOGOUT</button>
+              </Link>
             </>
           ) : (
             <>
@@ -32,11 +41,6 @@ const Header = () => {
               <Link to="/gallery">
                 <button className="p-1 m-1 navActive">GALLERY</button>
               </Link>
-
-              <Link to="/reviews">
-                <button className="p-1 m-1  navActive">REVIEWS</button>
-              </Link>
-
               <Link to="/login">
                 {" "}
                 <button className="p-1 m-1  navActive">LOGIN</button>

@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_THOUGHT } from '../utils/mutations';
 import { QUERY_THOUGHTS, QUERY_ME } from '../utils/queries';
 import { Link } from 'react-router-dom';
-import ThoughtList from './ThoughtList';
+
 const ThoughtForm = () => {
   const [thoughtText, setText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
@@ -72,9 +72,9 @@ const ThoughtForm = () => {
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Here's a new thought..."
+          placeholder="Here's a new review..."
           value={thoughtText}
-          className="form-input col-12 col-md-9"
+          className="form-input col-12 col-md-8 p-2"
           onChange={handleChange}
         ></textarea>
         <Link to="/reviews">
@@ -83,7 +83,6 @@ const ThoughtForm = () => {
         </button>
         </Link>
       </form>
-      <ThoughtList/>
     </div>
   );
 };
