@@ -9,23 +9,20 @@
     font-size: large;
     box-sizing: border-box;
 }
+
 #logo{
     font-size: 45pt;
 }
 .navActive{
     font-family: 'Georgia', sans-serif;
-    float: right;
+   
 }
 h1{
     font-family: 'Pacifico', sans-serif;
 }
-.search-bar{
-    width: 100%;
-    padding: 8px;
-    background: none;
-    color: aliceblue;
-    
-}
+.container-fluid{
+    padding: 0;
+ }
 .home-hero{
     margin-top: 5%;
 }
@@ -60,9 +57,7 @@ input{
     height:500px;
     width:600px;}
 
- img{
-    border: 5px solid white;
-}
+
 #home-hero{
     border: none;
 }
@@ -73,7 +68,12 @@ input{
       color: #fff;
       padding: 15px;
   }
-      
+
+  .icons{
+      background: #fff;
+      padding: 8px;
+  }
+ 
  @media screen and (max-width:575px) {
      .row{
          display: block;

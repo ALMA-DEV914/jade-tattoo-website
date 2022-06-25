@@ -3,7 +3,8 @@ import hero from "../assets/images/hero-logo.jpeg";
 
 const Footer = () => {
   return (
-    <div className="container-fluid bg-dark m-2 p-2 text-white">
+  
+    <footer className="container-fluid bg-dark text-light p-2 m-2">
     <div className="container">
       <div className="row">
         <div className="col">
@@ -48,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+       </div>
       </div>
       
       <p className="text-center p-1">
@@ -56,7 +57,8 @@ const Footer = () => {
         is made by <i class="fa fa-heart"></i>Alma Aungon Braun
       </p>
 
-    </div>
+    </footer>
+    
   );
 };
 

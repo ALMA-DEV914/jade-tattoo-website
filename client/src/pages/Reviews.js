@@ -2,9 +2,10 @@ import React from 'react';
 import ThoughtList from '../components/ThoughtList';
 import ThoughtForm from '../components/ThoughtForm';
 import Auth from '../utils/auth';
+import Homepage from './Homepage';
 import { useQuery } from '@apollo/client';
 import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
-import Homepage from './Homepage';
+
 
 const Reviews = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
@@ -33,7 +34,7 @@ const Reviews = () => {
         </div>
         {loggedIn && userData ? (
           <div className="col-12 col-lg-3 mb-3">
-           <Homepage/>
+         <Homepage/>
           </div>
         ) : null}
       </div>
