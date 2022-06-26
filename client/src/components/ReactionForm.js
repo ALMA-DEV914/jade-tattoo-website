@@ -47,7 +47,7 @@ const ReactionForm = ({ thoughtId }) => {
         <textarea
           placeholder="Leave a comments to this review..."
           value={reactionBody}
-          className="form-input col-12 col-md-9 p-2"
+          className="form-input col-12 col-md-9 p-1"
           onChange={handleChange}
         ></textarea>
 

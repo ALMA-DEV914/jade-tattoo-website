@@ -20,14 +20,14 @@ const ThoughtList = ({ thoughts, title }) => {
               >
                 {thought.username}
               </Link>{' '}
-              thought on {thought.createdAt}
+             feedback on {thought.createdAt}
             </p>
             <div className="card-body">
             <p>{thought.thoughtText}</p>
               <Link to={`/thought/${thought._id}`}>
                 <p className="mb-0">
                   Comments: {thought.reactionCount} || Click to{' '}
-                  {thought.reactionCount ? 'see' : 'add'} a comment!
+                  {thought.reactionCount ? 'see' : 'add'} a comments!
                 </p>
               </Link>
             </div>
