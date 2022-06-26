@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer";
 import hero from "../assets/images/hero-logo.jpeg";
 import { Link } from "react-router-dom";
 import icon1 from '../assets/images/studs.png';
@@ -46,9 +45,6 @@ const Homepage = () => {
           </div>
       </div>
         <About/>
-       
-      <Footer />
-      
     </>
   );
 };

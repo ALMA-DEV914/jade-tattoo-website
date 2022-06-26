@@ -40,10 +40,11 @@ const Signup = () => {
   return (
     <main className="d-flex justify-center mb-4">
       <div className="col-12 col-md-6 mx-auto">
-        <div className="card mx-auto">
-          <h1 className="card-header">Sign Up</h1>
+
           <div className="card-body">
             <form onSubmit={handleFormSubmit} className="form">
+            {error && <div className='bg-danger text-white p-2 opacity-75 text-center'>Signup failed</div>}
+              <h2 className='text-secondary mb-2 text-center'>Signup</h2>
             <label htmlFor="name">Username</label>
               <input
                 className="form-input"
@@ -74,18 +75,17 @@ const Signup = () => {
                 value={formState.password}
                 onChange={handleChange}
               /><br></br>
-              <button className="btn d-block bg-success text-white w-100 mt-2" type="submit">
+              <button className="btn w-100 bg-success text-white mt-2" type="submit">
                 Submit
-              </button><br></br>
+              </button>
+              <br></br><br></br><br></br>
               <Link to="/login">
-            <button className="btn d-block bg-info text-white w-100">LOGIN</button>
+            <button className="btn bg-info text-white w-100">LOGIN</button>
           </Link>
             </form>
-
-            {error && <div>Signup failed</div>}
-          </div>
+            </div>
         </div>
-      </div>
+     
     </main>
   );
 };

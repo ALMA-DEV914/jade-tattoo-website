@@ -33,7 +33,7 @@ const ReactionForm = ({ thoughtId }) => {
   };
 
   return (
-    <div>
+    <div className='container mt-3'>
       <p
         className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
       >
@@ -45,13 +45,13 @@ const ReactionForm = ({ thoughtId }) => {
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Leave a reaction to this thought..."
+          placeholder="Leave a comments to this review..."
           value={reactionBody}
-          className="form-input col-12 col-md-9"
+          className="form-input col-12 col-md-9 p-2"
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 col-md-3" type="submit">
+        <button className="btn col-12 col-md-3 text-white bg-success" type="submit">
           Submit
         </button>
       </form>

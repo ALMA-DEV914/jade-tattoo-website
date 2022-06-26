@@ -4,11 +4,11 @@ import hero from "../assets/images/hero-logo.jpeg";
 const Footer = () => {
   return (
   
-    <footer className="container-fluid bg-dark text-light p-2 m-2">
-    <div className="container">
+    <footer className="container-fluid bg-dark text-light ">
+    <div className="container p-2 m-1 mx-auto">
       <div className="row">
         <div className="col">
-          <h2>About</h2>
+          <h4>About</h4>
           <p>
             Jade Tattoo is a small start up business. Being passionate in arts
             and design, he found ways on how to apply this skills. It is located
@@ -17,12 +17,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="col">
-          <h2>Facebook</h2>
+          <h4>Facebook</h4>
           <div className="box flex">
             <img src={hero} alt="" width="120px" />
             <p>Contact me in messenger</p>
           </div>
-          <h2>Contact Us</h2>
+          <h4>Contact Us</h4>
           <i className="fa fa-phone"></i>
           <label>Call +63 0906 937 6165</label>
           <br></br>
@@ -30,7 +30,7 @@ const Footer = () => {
           <label>jade123@gmail.com</label>
         </div>
         <div className="col">
-          <h2>Location</h2>
+          <h4>Location</h4>
           <div class="mapouter">
             <div class="gmap_canvas">
               <iframe

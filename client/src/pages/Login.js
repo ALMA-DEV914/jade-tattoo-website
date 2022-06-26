@@ -41,12 +41,12 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
+    <main className="flex-row justify-center mb-4 mt-2">
       <div className="col-12 col-md-6 mx-auto">
-        <div className="card">
-          <h1 className="card-header">Login</h1>
           <div className="card-body">
             <form onSubmit={handleFormSubmit} className="form">
+            {error && <div className='bg-danger text-white p-2 opacity-75 text-center'>Login failed! Incorrect credentials.</div>}
+            <h2 className='text-center text-secondary mb-2'>Login</h2>
               <label htmlFor="name">Username</label>
               <input
                 className="form-input"
@@ -67,18 +67,16 @@ const Login = (props) => {
                 value={formState.password}
                 onChange={handleChange}
               /><br></br>
-              <button className="btn d-block w-100 mt-2 bg-success text-white" type="submit" onSubmit={handleFormSubmit}>
+              <button className="btn  w-100 mt-2 bg-success text-white" type="submit" onSubmit={handleFormSubmit}>
                 Submit
               </button>
               <Link to="/signup">
-                <button className='btn d-block w-100 mt-4 bg-info text-white'>Singup</button>
+                <button className='btn  w-100 mt-4 bg-info text-white'>Singup</button>
               </Link>
             </form>
-
-            {error && <div>Login failed</div>}
           </div>
         </div>
-      </div>
+      
     </main>
   );
 };

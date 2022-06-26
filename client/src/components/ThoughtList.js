@@ -16,18 +16,18 @@ const ThoughtList = ({ thoughts, title }) => {
               <Link
                 to={`/profile/${thought.username}`}
                 style={{ fontWeight: 700 }}
-                className="text-light"
+                className="text-info"
               >
                 {thought.username}
               </Link>{' '}
               thought on {thought.createdAt}
             </p>
             <div className="card-body">
+            <p>{thought.thoughtText}</p>
               <Link to={`/thought/${thought._id}`}>
-                <p>{thought.thoughtText}</p>
                 <p className="mb-0">
-                  Reactions: {thought.reactionCount} || Click to{' '}
-                  {thought.reactionCount ? 'see' : 'start'} the discussion!
+                  Comments: {thought.reactionCount} || Click to{' '}
+                  {thought.reactionCount ? 'see' : 'add'} a comment!
                 </p>
               </Link>
             </div>

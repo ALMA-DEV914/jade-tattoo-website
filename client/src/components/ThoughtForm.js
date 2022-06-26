@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useMutation } from '@apollo/client';
-import { ADD_THOUGHT } from '../utils/mutations';
-import { QUERY_THOUGHTS, QUERY_ME } from '../utils/queries';
-import { Link } from 'react-router-dom';
+import { useMutation } from "@apollo/client";
+import { ADD_THOUGHT } from "../utils/mutations";
+import { QUERY_THOUGHTS, QUERY_ME } from "../utils/queries";
 
 const ThoughtForm = () => {
-  const [thoughtText, setText] = useState('');
+  const [thoughtText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addThought, { error }] = useMutation(ADD_THOUGHT, {
@@ -50,7 +49,7 @@ const ThoughtForm = () => {
       });
 
       // clear form value
-      setText('');
+      setText("");
       setCharacterCount(0);
     } catch (e) {
       console.error(e);
@@ -58,12 +57,12 @@ const ThoughtForm = () => {
   };
 
   return (
-    <div className='container'>
-        <h1>Leave a Reviews</h1>
+    <div className="container">
+      <h1>Leave a Reviews</h1>
       <p
-        className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
+        className={`m-0 ${characterCount === 280 || error ? "text-error" : ""}`}
       >
-        Message-Schedule: {characterCount}/280 characters
+        Message-Reviews: {characterCount}/280 characters
         {error && <span className="ml-2"> Something went wrong...</span>}
       </p>
       <br></br>
@@ -77,11 +76,10 @@ const ThoughtForm = () => {
           className="form-input col-12 col-md-8 p-2"
           onChange={handleChange}
         ></textarea>
-        <Link to="/reviews">
+
         <button className="btn col-12 bg-success  col-md-2" type="submit">
           Submit
         </button>
-        </Link>
       </form>
     </div>
   );

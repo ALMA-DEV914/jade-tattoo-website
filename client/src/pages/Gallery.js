@@ -19,53 +19,54 @@ function Gallery() {
   return (
     <>
       <div className="container-fluid bg-dark">
-        <h1 className="text-white text-center">Welcome to the Gallery</h1>
-        <div className="container d-flex bg-dark">
+        <h1 className="text-white text-center p-2">Welcome to the Gallery</h1>
+        <p className="text-white text-center">Sample of Jade's work and design.</p>
+        <div className="container d-flex">
           <div className="row d-flex">
-            <div className="col">
-              <img src={pic14} alt="" width="400px" />
+            <div className="col designs">
+              <img src={pic14} alt="" width="400px"/>
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic3} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic6} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic13} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic1} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs ">
               <img src={pic2} alt="" width="400px" />
             </div>
 
-            <div className="col">
+            <div className="col designs">
               <img src={pic4} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic5} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic7} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic9} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic10} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic11} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic12} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic15} alt="" width="400px" />
             </div>
-            <div className="col">
+            <div className="col designs">
               <img src={pic8} alt="" width="400px" />
             </div>
           </div>

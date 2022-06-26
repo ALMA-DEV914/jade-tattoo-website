@@ -61,7 +61,7 @@ input{
 .form{
       width: 80%;
       margin: 10% auto;
-      background-color: #212121;
+      background-color: #2d2c2c;
       color: #fff;
       padding: 15px;
   }
@@ -70,7 +70,10 @@ input{
       background: #fff;
       padding: 8px;
   }
- 
+  .designs img{
+      border: 5px solid #fff;
+      margin: 1% auto;
+  }
  @media screen and (max-width:575px) {
      .row{
          display: block;
@@ -78,8 +81,13 @@ input{
      .col{
          width: 100%;
      }
-     .navActive{
+     .nav{
+         display: block;
+        
+     }
+     .navItem{
          width: 100%;
+         margin: 0 auto;
      }
      .mapouter{
         position:relative;

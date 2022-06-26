@@ -21,16 +21,19 @@ const Reviews = () => {
             <ThoughtForm />
           </div>
         )}
-        <div className={`container col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
+        <div className={`container col-12 mb-3 d-flex ${loggedIn && 'col-lg-12'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
+          <div className='col-8'>
             <ThoughtList
               thoughts={thoughts}
               title="Some Reviews from our Customers"
             />
+            </div>
           )}
      
+     <div className='col'>
         {loggedIn && userData ? (
          <FriendList
               username={userData.me.username}
@@ -40,6 +43,7 @@ const Reviews = () => {
         
         ) : null}
         </div>
+      </div>
       </div>
     </main>
   );

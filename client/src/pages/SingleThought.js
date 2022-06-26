@@ -22,25 +22,27 @@ const SingleThought = (props) => {
   }
 
   return (
-    <div>
-      <div className="card mb-3">
-        <p className="card-header">
+    <div className='container mt-3 p-2'>
+      <div className="col-lg-8 mb-3">
+        <div className="">
           <span style={{fontWeight: 700 }} className="text-dark">
-            {thought.username}
-          </span>{' '}
-          thought on {thought.createdAt}
-        </p>
+           <h4>{thought.username}</h4>
+          </span>{' '} <span className='text-info'>feedback on {thought.createdAt}</span>
+        </div>
+        
         <div className="card-body">
           <p>{thought.thoughtText}</p>
         </div>
-      </div>
-
+        </div>
+     
+      <div className='col-lg-10 mx-auto'>
       {thought.reactionCount > 0 && (
         <ReactionList reactions={thought.reactions} />
       )}
-
+      </div>
       {Auth.loggedIn() && <ReactionForm thoughtId={thought._id} />}
     </div>
+    
   );
 };
 

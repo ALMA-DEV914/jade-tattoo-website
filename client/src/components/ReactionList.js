@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const ReactionList = ({ reactions }) => {
   return (
-      <div className='container'>
+    <div className='container mt-3 p-2'>
     <div className="card mb-3">
       <div className="card-header">
-        <span className="text-light">Comments</span>
+        <span className="text-info">Comments</span>
       </div>
       <div className="card-body">
         {reactions &&
