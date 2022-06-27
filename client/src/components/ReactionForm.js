@@ -33,7 +33,7 @@ const ReactionForm = ({ thoughtId }) => {
   };
 
   return (
-    <div className='container mt-3'>
+    <div className='container mt-3 mb-3'>
       <p
         className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}
       >
