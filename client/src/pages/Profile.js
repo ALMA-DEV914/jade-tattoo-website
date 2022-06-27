@@ -47,8 +47,8 @@ const Profile = (props) => {
 
   return (
     <div className='container'>
-      <div className="mb-3">
-        <h2 className="text-secondary p-3 display-inline-block">
+      <div className="mb-1">
+        <h2 className="text-secondary p-2 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2><br></br>
      
@@ -60,7 +60,7 @@ const Profile = (props) => {
           />
         </div>
 
-    <div className="col-12 col-lg-3  mb-3">
+    <div className="col-12 col-lg-3  mb-2">
         {userParam && (
           <button className="btn bg-success w-100" onClick={handleClick}>
             Add Friend
