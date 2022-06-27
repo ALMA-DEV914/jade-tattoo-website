@@ -52,7 +52,7 @@ const Profile = (props) => {
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2><br></br>
      
-     <div className="d-flex justify-space-between mb-3">
+     <div className="row">
         <div className="col-12 mb-3 col-lg-8">
           <ThoughtList
             thoughts={user.thoughts}
@@ -60,7 +60,7 @@ const Profile = (props) => {
           />
         </div>
 
-    <div className="col-12 col-lg-3 mb-3">
+    <div className="col-12 col-lg-3  mb-3">
         {userParam && (
           <button className="btn bg-success w-100" onClick={handleClick}>
             Add Friend

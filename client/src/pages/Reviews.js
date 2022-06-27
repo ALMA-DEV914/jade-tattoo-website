@@ -15,17 +15,17 @@ const Reviews = () => {
 
   return (
     <main>
-      <div className="flex-row justify-space-between">
+      <div className="container flex-row justify-space-between">
         {loggedIn && (
           <div className="col-12 mb-3">
             <ThoughtForm />
           </div>
         )}
-        <div className={`container col-12 mb-3 d-flex ${loggedIn && 'col-lg-12'}`}>
+        <div className={`row ${loggedIn && 'col-lg-12'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
-          <div className='col-8'>
+          <div className='col-12 mb-3 col-lg-8'>
             <ThoughtList
               thoughts={thoughts}
               title="Some Reviews from our Customers"
@@ -33,7 +33,7 @@ const Reviews = () => {
             </div>
           )}
      
-     <div className='col'>
+     <div className='col-12 col-lg-3  mb-3'>
         {loggedIn && userData ? (
          <FriendList
               username={userData.me.username}
