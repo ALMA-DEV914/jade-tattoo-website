@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/images/hero-logo.jpeg";
+import hero from "../assets/images/t-home.jpg";
 import { Link } from "react-router-dom";
 import icon1 from '../assets/images/studs.png';
 import icon2 from "../assets/images/piercing (2).png";
@@ -13,7 +13,7 @@ const Homepage = () => {
     <div className="container-fluid bg-dark">
       <div className="container d-flex text-white">
          <div className="row">
-         <div className="col">
+         <div className="col mt-4">
           <h2>Welcome to the Tattoos Hub.</h2><br></br>
           <p>The tattoo is no longer quite the symbol of rebellion and subculture it once was. Tattooing is one of the earliest visual art forms and has served as a means of self-expression for thousands of years. The traditional style, also called old school tattoo style, American traditional tattoo style, classic tattoo style or Western traditional tattoo style, is known for its bold lines, bright colors, and iconic designs like roses, anchors, and gorgeous lady heads.</p><br></br>
          <Link to="/reviews" ><button className="bg-success">Add Reviews</button></Link>

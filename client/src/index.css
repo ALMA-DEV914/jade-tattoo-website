@@ -24,8 +24,10 @@ h1{
 .container-fluid{
     padding: 0;
  }
-.home-hero{
-    margin-top: 5%;
+#home-hero{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 20px solid  grey;
 }
 .btn{
     color: #fff;

@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from "../assets/images/tattoo-hero2.png";
+import pic from "../assets/images/about.jpg";
 
 function About() {
   return (
