@@ -15,6 +15,7 @@
 }
 .navActive{
     font-family: 'Georgia', sans-serif;
+    border: none;
    
 }
 h1{
@@ -74,6 +75,7 @@ input{
       border: 5px solid #fff;
       margin: 1% auto;
   }
+  
  @media screen and (max-width:575px) {
      .row{
          display: block;
@@ -81,14 +83,20 @@ input{
      .col{
          width: 100%;
      }
-     .nav{
-         display: block;
-        
+     .nav .text-white{
+         width: 100%;
+         text-align: center;
      }
      .navItem{
          width: 100%;
-         margin: 0 auto;
      }
+     .navActive{
+         display: block;
+         border: 1px solid #fff;
+         width: 100%;
+         
+    }
+
      .mapouter{
         position:relative;
         text-align:right;

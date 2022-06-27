@@ -47,20 +47,20 @@ const Profile = (props) => {
 
   return (
     <div className='container'>
-      <div className="mb-1">
+      <div>
         <h2 className="text-secondary p-2 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2><br></br>
      
      <div className="row">
-        <div className="col-12 mb-3 col-lg-8">
+        <div className="col-12 col-lg-8">
           <ThoughtList
             thoughts={user.thoughts}
             title={`${user.username}'s reviews...`}
           />
         </div>
 
-    <div className="col-12 col-lg-3  mb-2">
+    <div className="col-12 col-lg-3 ">
         {userParam && (
           <button className="btn bg-success w-100" onClick={handleClick}>
             Add Friend

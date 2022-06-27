@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container-fluid bg-secondary py-2">
+    <header className="container-fluid bg-secondary py-4">
       <div className="container d-flex justify-content-between nav">
         <h1 className="text-white">
           <SiArtstation id="logo" /> Tattoo@Jade{" "}
