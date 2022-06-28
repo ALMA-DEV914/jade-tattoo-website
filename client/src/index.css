@@ -18,6 +18,9 @@
     border: none;
    
 }
+.navbar-toggler-icon, .navbar-toggler{
+    color: #fff;
+}
 h1{
     font-family: 'Pacifico', sans-serif;
 }
@@ -78,7 +81,11 @@ input{
       border: 5px solid #fff;
       margin: 1% auto;
   }
-  
+  .nav-icon{
+      font-size: 20pt;
+      padding: auto;
+  }
+
  @media screen and (max-width:575px) {
      .row{
          display: block;
@@ -86,20 +93,13 @@ input{
      .col{
          width: 100%;
      }
-     .nav .text-white{
-         width: 100%;
-         text-align: center;
-     }
-     .navItem{
-         width: 100%;
-     }
+     
      .navActive{
          display: block;
          border: 1px solid #fff;
          width: 100%;
          
     }
-
      .mapouter{
         position:relative;
         text-align:right;

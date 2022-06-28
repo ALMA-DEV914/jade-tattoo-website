@@ -12,7 +12,7 @@ const Footer = () => {
           <p>
             Jade Tattoo is a small start up business. Being passionate in arts
             and design, he found ways on how to apply this skills. It is located
-            in small town at Brgy. Maraska Roxas, oriental Mindoro. The most
+            in small town at Brgy. Maraska Roxas, Oriental Mindoro. The most
             inspiring thing about him is that he is a self-taught designer.{" "}
           </p>
         </div>

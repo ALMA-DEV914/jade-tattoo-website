@@ -8,7 +8,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Header from './components/Header';
+import TopNav from './components/TopNav';
 import Footer from './components/Footer';
 import Reviews from './pages/Reviews';
 import Login from './pages/Login';
@@ -42,7 +42,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="container-fluid">
-          <Header />
+          <TopNav />
           <div className="container-fluid">
             <Switch>
             <Route exact path="/" component={Homepage} />

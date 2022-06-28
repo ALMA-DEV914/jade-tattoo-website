@@ -6,7 +6,6 @@ import icon2 from "../assets/images/piercing (2).png";
 import icon4 from "../assets/images/piercing.png";
 import About from "../components/About";
 
-
 const Homepage = () => {
    return (
     <>
