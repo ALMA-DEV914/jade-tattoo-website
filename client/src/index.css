@@ -85,6 +85,9 @@ input{
       font-size: 20pt;
       padding: auto;
   }
+  .btn-save{
+      width: 100%;
+  }
 
  @media screen and (max-width:575px) {
      .row{
