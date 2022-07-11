@@ -16,6 +16,8 @@ import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import Homepage from './pages/Homepage';
 import Gallery from './pages/Gallery';
+import Calendar from "./components/Calendar";
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -36,7 +38,9 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
+  
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -51,9 +55,10 @@ function App() {
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/profile/:username?" component={Profile} />
               <Route exact path="/thought/:id" component={SingleThought} />
-
+              <Route exact path="/calendar" component={Calendar} />
             </Switch>
           </div>
+         
         </div>
       </Router>
     </ApolloProvider>

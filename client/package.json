@@ -5,6 +5,11 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.8",
+    "@fullcalendar/core": "^5.0.0",
+    "@fullcalendar/daygrid": "^5.0.0",
+    "@fullcalendar/react": "^5.0.0",
+    "@fullcalendar/timegrid": "^5.0.0",
+    "@fullcalendar/list": "^5.0.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -47,7 +52,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
