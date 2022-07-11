@@ -5,6 +5,7 @@ import icon1 from '../assets/images/studs.png';
 import icon2 from "../assets/images/piercing (2).png";
 import icon4 from "../assets/images/piercing.png";
 import About from "../components/About";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
    return (
@@ -44,6 +45,7 @@ const Homepage = () => {
           </div>
       </div>
         <About/>
+        <Footer/>
     </>
   );
 };

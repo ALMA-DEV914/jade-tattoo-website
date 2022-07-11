@@ -9,7 +9,6 @@ import {
 import { setContext } from '@apollo/client/link/context';
 
 import TopNav from './components/TopNav';
-import Footer from './components/Footer';
 import Reviews from './pages/Reviews';
 import Login from './pages/Login';
 import SingleThought from './pages/SingleThought';
@@ -55,7 +54,6 @@ function App() {
 
             </Switch>
           </div>
-          <Footer />
         </div>
       </Router>
     </ApolloProvider>
