@@ -37,6 +37,7 @@ const Login = (props) => {
     setFormState({
       email: '',
       password: '',
+      photo: ''
     });
   };
 
@@ -67,6 +68,15 @@ const Login = (props) => {
                 value={formState.password}
                 onChange={handleChange}
               /><br></br>
+              <label>Photo</label>
+              <input type="file" 
+              className="form-input"
+               name='photo' 
+               id='photo' 
+               value={formState.photo} 
+               onChange={handleChange}>
+
+               </input>
               <button className="btn  w-100 mt-2 bg-success text-white" type="submit" onSubmit={handleFormSubmit}>
                 Submit
               </button>

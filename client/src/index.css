@@ -38,7 +38,14 @@ h1{
     padding:18px;
     margin-top: -4%;
 }
-
+#btn{
+  padding: 18px;
+  border-radius: 2px;
+}
+#profile{
+  width: 80px;
+  margin: 5px;
+}
 button{
     padding: 8px 16px;
     background: none;

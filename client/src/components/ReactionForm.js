@@ -51,7 +51,7 @@ const ReactionForm = ({ thoughtId }) => {
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 col-md-3 text-white bg-success" type="submit">
+        <button className="btn col-12 col-md-3 text-white bg-success" type="submit" id='btn'>
           Submit
         </button>
       </form>

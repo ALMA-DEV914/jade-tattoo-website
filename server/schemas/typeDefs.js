@@ -21,6 +21,7 @@ type Thought {
     _id: ID
     username: String
     email: String
+    photo:String
     friendCount: Int
     thoughts: [Thought]
     friends: [User]
@@ -40,7 +41,7 @@ type Thought {
 
       type Mutation {
         login(email: String!, password: String!): Auth
-        addUser(username: String!, email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, photo: String!, password: String!): Auth
         addThought(thoughtText: String!): Thought
         addReaction(thoughtId: ID!, reactionBody: String!): Thought
         addFriend(friendId: ID!): User

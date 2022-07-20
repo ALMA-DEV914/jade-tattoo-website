@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ThoughtList = ({ thoughts, title }) => {
+const ThoughtList = ({ thoughts, title, user }) => {
   if (!thoughts) {
     return <h3>No Reviews Yet</h3>;
   }
@@ -13,6 +13,7 @@ const ThoughtList = ({ thoughts, title }) => {
         thoughts.map(thought => (
           <div key={thought._id} className="card mb-3">
             <p className="card-header">
+              <img src={`/profile/${thought.username}`} alt="profile"></img>
               <Link
                 to={`/profile/${thought.username}`}
                 style={{ fontWeight: 700 }}

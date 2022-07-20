@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React from "react";
+import { Link, useParams } from "react-router-dom";
 
-import ThoughtForm from '../components/ThoughtForm';
-import ThoughtList from '../components/ThoughtList';
-import FriendList from '../components/FriendsList';
-import { useQuery, useMutation} from '@apollo/client';
-import { ADD_FRIEND } from '../utils/mutations';
-import { QUERY_USER, QUERY_ME } from '../utils/queries';
-import Auth from '../utils/auth';
+import ThoughtForm from "../components/ThoughtForm";
+import ThoughtList from "../components/ThoughtList";
+import FriendList from "../components/FriendsList";
+import { useQuery, useMutation } from "@apollo/client";
+import { ADD_FRIEND } from "../utils/mutations";
+import { QUERY_USER, QUERY_ME } from "../utils/queries";
+import Auth from "../utils/auth";
 
 const Profile = (props) => {
   const { username: userParam } = useParams();
@@ -46,34 +46,37 @@ const Profile = (props) => {
   };
 
   return (
-    <div className='container'>
+    <div className="container">
       <div>
+        <img src={user.photo}
+          alt="profile"
+        ></img>
         <h2 className="text-secondary p-2 display-inline-block">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
-        </h2><br></br>
-     
-     <div className="row">
-        <div className="col-12 col-lg-8">
-          <ThoughtList
-            thoughts={user.thoughts}
-            title={`${user.username}'s reviews...`}
-          />
-        </div>
+          Viewing {userParam ? `${user.username}'s` : "your"} profile.
+        </h2>
 
-    <div className="col-12 col-lg-3 ">
-        {userParam && (
-          <button className="btn bg-success w-100" onClick={handleClick}>
-            Add Friend
-          </button>
-        )}
-        <FriendList
-            username={user.username}
-            friendCount={user.friendCount}
-            friends={user.friends}
-          />
-       </div>
+        <div className="row">
+          <div className="col-12 col-lg-8">
+            <ThoughtList
+              thoughts={user.thoughts}
+              title={`${user.username}'s reviews...`}
+            />
+          </div>
+          <div className="col-12 col-lg-3 ">
+            {userParam && (
+              <button className="btn bg-success w-100" onClick={handleClick}>
+                Add Friend
+              </button>
+            )}
+            <FriendList
+              username={user.username}
+              friendCount={user.friendCount}
+              friends={user.friends}
+            />
+          </div>
+        </div>
       </div>
-      </div>
+
       <div className="mb-4">{!userParam && <ThoughtForm />}</div>
     </div>
   );

@@ -27,6 +27,7 @@ function About() {
             Reserve your sit
           </button>
           </Link>
+
         </div>
       </div>
     </div>

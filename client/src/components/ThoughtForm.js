@@ -77,7 +77,7 @@ const ThoughtForm = () => {
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 bg-success  col-md-2" type="submit">
+        <button className="btn col-12 bg-success  col-md-2" type="submit" id="btn">
           Submit
         </button>
       </form>
