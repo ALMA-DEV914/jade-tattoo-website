@@ -48,13 +48,15 @@ const Profile = (props) => {
   return (
     <div className="container">
       <div>
-        <img src={user.photo}
+        <div className="text-center">
+        <img
+          src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
           alt="profile"
         ></img>
         <h2 className="text-secondary p-2 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : "your"} profile.
         </h2>
-
+      </div>
         <div className="row">
           <div className="col-12 col-lg-8">
             <ThoughtList

@@ -19,9 +19,7 @@ const thoughtSchema = new Schema(
       type: String,
       required: true
     },
-    photo: {
-      type: String
-    },
+
     reactions: [reactionSchema]
   },
   {

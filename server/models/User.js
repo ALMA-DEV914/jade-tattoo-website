@@ -20,9 +20,7 @@ const userSchema = new Schema(
       required: true,
       minlength: 5
     },
-    photo: {
-      type: String,
-     },
+
     thoughts: [
       {
         type: Schema.Types.ObjectId,
