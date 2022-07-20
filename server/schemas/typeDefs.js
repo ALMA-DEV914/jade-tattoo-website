@@ -7,6 +7,7 @@ type Thought {
     thoughtText: String
     createdAt: String
     username: String
+    photo: String
     reactionCount: Int
     reactions: [Reaction]
   }

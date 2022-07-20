@@ -13,7 +13,7 @@ const ThoughtList = ({ thoughts, title, user }) => {
         thoughts.map(thought => (
           <div key={thought._id} className="card mb-3">
             <p className="card-header">
-              <img src={`/profile/${thought.username}`} alt="profile"></img>
+              <img src={thought.photo} alt="profile"></img>
               <Link
                 to={`/profile/${thought.username}`}
                 style={{ fontWeight: 700 }}
