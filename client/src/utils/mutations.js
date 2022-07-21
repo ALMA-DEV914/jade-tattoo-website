@@ -39,6 +39,17 @@ export const ADD_THOUGHT = gql`
   }
 `;
 
+export const ADD_BOOKING = gql`
+  mutation addBooking($bookingText: String!) {
+    addBooking(bookingText: $bookingText) {
+      _id
+      bookingText
+      createdAt
+      username
+    }
+  }
+`;
+
 export const ADD_REACTION = gql`
   mutation addReaction($thoughtId: ID!, $reactionBody: String!) {
     addReaction(thoughtId: $thoughtId, reactionBody: $reactionBody) {

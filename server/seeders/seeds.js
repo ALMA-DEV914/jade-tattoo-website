@@ -13,10 +13,9 @@ db.once('open', async () => {
   for (let i = 0; i < 50; i += 1) {
     const username = faker.internet.userName();
     const email = faker.internet.email(username);
-    const photo = faker.internet.photo();
     const password = faker.internet.password();
 
-    userData.push({ username, email, photo, password });
+    userData.push({ username, email, password });
   }
 
   const createdUsers = await User.collection.insertMany(userData);
@@ -52,6 +51,24 @@ db.once('open', async () => {
     );
 
     createdThoughts.push(createdThought);
+  }
+
+  // create thoughts
+  let createdBookings = [];
+  for (let i = 0; i < 100; i += 1) {
+    const bookingText = faker.lorem.words(Math.round(Math.random() * 20) + 1);
+
+    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
+    const { username, _id: userId } = createdUsers.ops[randomUserIndex];
+
+    const createdBooking = await Booking.create({ bookingText, username });
+
+    const updatedUser = await User.updateOne(
+      { _id: userId },
+      { $push: { bookings: createdBooking._id } }
+    );
+
+    createdBookings.push(createdBooking);
   }
 
   // create reactions

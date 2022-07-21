@@ -7,9 +7,14 @@ type Thought {
     thoughtText: String
     createdAt: String
     username: String
-    photo: String
     reactionCount: Int
     reactions: [Reaction]
+  }
+ type Booking {
+    _id: ID
+    bookingText: String
+    createdAt: String
+    username: String
   }
 
   type Reaction {
@@ -25,6 +30,7 @@ type Thought {
     photo:String
     friendCount: Int
     thoughts: [Thought]
+    bookings:[Booking]
     friends: [User]
   }
 
@@ -37,13 +43,16 @@ type Thought {
       users: [User]
       user(username: String!): User
       thoughts(username: String): [Thought]
+      bookings(username: String): [Booking]
       thought(_id: ID!): Thought
+      booking(_id: ID): Booking
       }
 
       type Mutation {
         login(email: String!, password: String!): Auth
-        addUser(username: String!, email: String!, photo: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
         addThought(thoughtText: String!): Thought
+        addBooking(bookingText: String!): Booking
         addReaction(thoughtId: ID!, reactionBody: String!): Thought
         addFriend(friendId: ID!): User
       }

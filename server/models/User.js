@@ -27,6 +27,12 @@ const userSchema = new Schema(
         ref: 'Thought'
       }
     ],
+    bookings: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Booking'
+      }
+    ],
     friends: [
       {
         type: Schema.Types.ObjectId,

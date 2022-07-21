@@ -18,6 +18,28 @@ export const QUERY_THOUGHTS = gql`
   }
 `;
 
+export const QUERY_BOOKINGS = gql`
+  query bookings($username: String) {
+    bookings(username: $username) {
+      _id
+      bookingText
+      createdAt
+      username
+    }
+  }
+`;
+
+export const QUERY_BOOKING = gql`
+  query booking($id: ID!) {
+    booking(_id: $id) {
+      _id
+      bookingText
+      createdAt
+      username
+    }
+  }
+`;
+
 export const QUERY_THOUGHT = gql`
   query thought($id: ID!) {
     thought(_id: $id) {
@@ -53,6 +75,11 @@ export const QUERY_USER = gql`
         createdAt
         reactionCount
       }
+      bookings {
+        _id
+        bookingText
+        createdAt
+      }
     }
   }
 `;
@@ -75,6 +102,11 @@ export const QUERY_ME = gql`
           reactionBody
           username
         }
+      }
+      bookings {
+        _id
+        bookingText
+        createdAt
       }
       friends {
         _id

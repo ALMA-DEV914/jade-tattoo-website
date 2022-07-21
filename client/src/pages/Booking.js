@@ -3,13 +3,13 @@ import BookingList from '../components/BookingList';
 import BookingForm from '../components/BookingForm';
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
+import { QUERY_THOUGHTS, QUERY_ME_BASIC, QUERY_BOOKINGS} from '../utils/queries';
 
 
 const Booking = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
+  const { loading, data } = useQuery(QUERY_THOUGHTS, QUERY_BOOKINGS);
   const { data: userData } = useQuery(QUERY_ME_BASIC);
-  const thoughts = data?.thoughts || [];
+  const bookings = data?.bookings || [];
 
   const loggedIn = Auth.loggedIn();
 
@@ -27,7 +27,7 @@ const Booking = () => {
           ) : (
           <div className='col-12 mb-3 col-lg-8'>
             <BookingList
-              thoughts={thoughts}
+              bookings={bookings}
             />
             </div>
           )}

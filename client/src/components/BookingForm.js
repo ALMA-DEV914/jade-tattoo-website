@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 import { useMutation } from "@apollo/client";
-import { ADD_THOUGHT } from "../utils/mutations";
-import { QUERY_THOUGHTS, QUERY_ME } from "../utils/queries";
+import { ADD_BOOKING } from "../utils/mutations";
+import { QUERY_BOOKINGS, QUERY_ME} from "../utils/queries";
 
 const BookingForm = () => {
-  const [thoughtText, setText] = useState("");
+  const [bookingText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
-    update(cache, { data: { addThought } }) {
+  const [addBooking, { error }] = useMutation(ADD_BOOKING, {
+    update(cache, { data: { addBooking } }) {
       try {
         // update thought array's cache
         // could potentially not exist yet, so wrap in a try/catch
-        const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
+        const { bookings } = cache.readQuery({ query: QUERY_BOOKINGS });
         cache.writeQuery({
-          query: QUERY_THOUGHTS,
-          data: { thoughts: [addThought, ...thoughts] },
+          query: QUERY_BOOKINGS,
+          data: { bookings: [addBooking, ...bookings] },
         });
       } catch (e) {
         console.error(e);
@@ -26,7 +26,7 @@ const BookingForm = () => {
       const { me } = cache.readQuery({ query: QUERY_ME });
       cache.writeQuery({
         query: QUERY_ME,
-        data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
+        data: { me: { ...me, bookings: [...me.bookings, addBooking] } },
       });
     },
   });
@@ -44,8 +44,8 @@ const BookingForm = () => {
     event.preventDefault();
 
     try {
-      await addThought({
-        variables: { thoughtText },
+      await addBooking({
+        variables: { bookingText },
       });
 
       // clear form value
@@ -59,7 +59,6 @@ const BookingForm = () => {
   return (
     <div className="container">
       <h1>Reserved your sit at your convenience</h1>
-      <div class="ae-emd-cal" data-calendar="Fd272527" data-configure="true" data-title="" data-title-show="true" data-today="true" data-datenav="true" data-date="true" data-monthweektoggle="true" data-subscribebtn="true" data-swimonth="true" data-swiweek="true" data-swischedule="true" data-timezone="true" data-logo="true" data-defaultview="month" data-firstday="1" data-datetimeformat="1"></div> 
       <p
         className={`m-0 ${characterCount === 280 || error ? "text-error" : ""}`}
       >
@@ -73,7 +72,7 @@ const BookingForm = () => {
       >
         <textarea
           placeholder="Leave a message..."
-          value={thoughtText}
+          value={bookingText}
           className="form-input col-12 col-md-8 p-1"
           onChange={handleChange}
         ></textarea>
