@@ -3,11 +3,11 @@ import BookingList from '../components/BookingList';
 import BookingForm from '../components/BookingForm';
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import { QUERY_THOUGHTS, QUERY_ME_BASIC, QUERY_BOOKINGS} from '../utils/queries';
+import { QUERY_ME_BASIC, QUERY_BOOKINGS} from '../utils/queries';
 
 
 const Booking = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS, QUERY_BOOKINGS);
+  const { loading, data } = useQuery(QUERY_BOOKINGS);
   const { data: userData } = useQuery(QUERY_ME_BASIC);
   const bookings = data?.bookings || [];
 

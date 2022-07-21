@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BookingList = ({ bookings }) => {
+const BookingList = ({bookings }) => {
   if (!bookings) {
     return <h3>No Reservation Yet</h3>;
   }
@@ -17,7 +18,13 @@ const BookingList = ({ bookings }) => {
                 alt="profile"
                 id="profile"
               ></img>
-              <h2 className="text-info">{booking.username}</h2> reserve her/his
+               <Link
+                to={`/profile/${booking.username}`}
+                style={{ fontWeight: 700 }}
+                className="text-info"
+              >
+              {booking.username}
+              </Link>{' '} reserve her/his
               sit on {booking.createdAt}
             </p>
             <div className="card-body">
