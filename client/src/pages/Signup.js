@@ -75,14 +75,6 @@ const Signup = () => {
                 value={formState.password}
                 onChange={handleChange}
               />
-               <label>Photo</label>
-              <input type="file" 
-              className="form-input"
-               name='photo' 
-               id='photo' 
-               value={formState.photo} 
-               onChange={handleChange}>
-              </input>
               <br></br>
               <button className="btn w-100 bg-success text-white mt-2" type="submit">
                 Submit
