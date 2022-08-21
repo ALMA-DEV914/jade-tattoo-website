@@ -8,6 +8,7 @@ import { useQuery, useMutation } from "@apollo/client";
 import { ADD_FRIEND } from "../utils/mutations";
 import { QUERY_USER, QUERY_ME } from "../utils/queries";
 import Auth from "../utils/auth";
+import Footer from "../components/Footer";
 
 const Profile = (props) => {
   const { username: userParam } = useParams();
@@ -46,13 +47,10 @@ const Profile = (props) => {
   };
 
   return (
+    <>
     <div className="container">
       <div>
-        <div className="text-center">
-        <img
-          src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-          alt="profile"
-        ></img>
+        <div className="text-center mt-4">
         <h2 className="text-secondary p-2 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : "your"} profile.
         </h2>
@@ -81,6 +79,8 @@ const Profile = (props) => {
 
       <div className="mb-4">{!userParam && <ThoughtForm />}</div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

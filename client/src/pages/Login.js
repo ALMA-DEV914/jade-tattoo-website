@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
-
+import Footer from "../components/Footer"
 import Auth from '../utils/auth';
 import { Link } from 'react-router-dom';
 
@@ -71,11 +71,12 @@ const Login = (props) => {
                 Submit
               </button>
               <Link to="/signup">
-                <button className='btn  w-100 mt-4 bg-info text-white'>Singup</button>
+                <button className='btn  w-100 mt-4 bg-secondary text-white'>Singup</button>
               </Link>
             </form>
           </div>
         </div>
+        <Footer/>
       
     </main>
   );

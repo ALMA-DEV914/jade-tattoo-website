@@ -6,6 +6,9 @@ import icon2 from "../assets/images/piercing (2).png";
 import icon4 from "../assets/images/piercing.png";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import moment from 'moment'
+var date = moment().format("MMMM Do YYYY - h:mm:ss a");
+
 
 const Homepage = () => {
   return (
@@ -15,6 +18,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col mt-4">
               <h2>Welcome to the Tattoos Hub.</h2>
+              <p>{date}</p>
               <br></br>
               <p>
                 The tattoo is no longer quite the symbol of rebellion and

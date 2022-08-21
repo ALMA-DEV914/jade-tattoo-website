@@ -27,7 +27,6 @@ type Thought {
     _id: ID
     username: String
     email: String
-    photo:String
     friendCount: Int
     thoughts: [Thought]
     bookings:[Booking]

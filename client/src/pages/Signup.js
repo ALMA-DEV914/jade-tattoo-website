@@ -3,13 +3,16 @@ import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
+import Footer from '../components/Footer';
 
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
     email: '',
     password: '',
+    image: ''
   });
+
   const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
@@ -19,8 +22,10 @@ const Signup = () => {
     setFormState({
       ...formState,
       [name]: value,
+
     });
   };
+  
 
   // submit form
   const handleFormSubmit = async (event) => {
@@ -37,7 +42,10 @@ const Signup = () => {
     }
   };
 
+
+
   return (
+    <>
     <main className="d-flex justify-center mb-4">
       <div className="col-12 col-md-6 mx-auto">
 
@@ -81,13 +89,14 @@ const Signup = () => {
               </button>
               <br></br><br></br><br></br>
               <Link to="/login">
-            <button className="btn bg-info text-white w-100">LOGIN</button>
+            <button className="btn bg-secondary text-white w-100">LOGIN</button>
           </Link>
             </form>
             </div>
         </div>
-     
     </main>
+    <Footer/>
+    </>
   );
 };
 

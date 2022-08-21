@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const ThoughtList = ({ thoughts, title}) => {
   if (!thoughts) {
     return <h3>No Reviews Yet</h3>;
   }
 
   return (
+  <>
     <div className='container'>
       <h3>{title}</h3>
       {thoughts &&
@@ -35,6 +37,7 @@ const ThoughtList = ({ thoughts, title}) => {
           </div>
         ))}
     </div>
+    </>
   );
 };
 
