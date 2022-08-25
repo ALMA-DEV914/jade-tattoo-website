@@ -5,7 +5,7 @@
 [The Deployed Application](https://tranquil-thicket-54252.herokuapp.com/)
 
 I was inspired to build this app for my little brother who just started his tattoo business. It features a homepage, a gallery where demontrates his works or design. A login and signup features where user can add reviews and join the conversations. It has a features of user profile where can only be access by login in or signing up. Users can also logout and you can add a friend in your list.
-       1. Need to add calendar - for customer to schedule an appointment
+       
 
 ## Tools and Technologies
 
