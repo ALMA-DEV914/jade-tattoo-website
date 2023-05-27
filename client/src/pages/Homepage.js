@@ -43,6 +43,11 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="container text-center mt-4">
         <h1>What We Do</h1>
         <div className="row">
@@ -81,7 +86,9 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <div className="about">
       <About />
+      </div>
       <Footer />
     </>
   );

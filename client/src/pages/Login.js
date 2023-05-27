@@ -47,19 +47,19 @@ const Login = (props) => {
             <form onSubmit={handleFormSubmit} className="form">
             {error && <div className='bg-danger text-white p-2 opacity-75 text-center'>Login failed! Incorrect credentials.</div>}
             <h2 className='text-center text-secondary mb-2'>Login</h2>
-              <label htmlFor="name">Username</label>
+              <label htmlFor="name" className='mb-2'>Username</label>
               <input
-                className="form-input"
+                className="form-input mb-2"
                 placeholder="Your email"
                 name="email"
                 type="email"
                 id="email"
                 value={formState.email}
                 onChange={handleChange}
-              />
-              <label htmlFor="password">Password</label>
+              /><br></br>
+              <label htmlFor="password" className='mb-2'>Password</label>
               <input
-                className="form-input"
+                className="form-input mb-2"
                 placeholder="******"
                 name="password"
                 type="password"

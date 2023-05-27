@@ -76,7 +76,6 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-
       <div className="mb-4">{!userParam && <ThoughtForm />}</div>
     </div>
     <Footer/>

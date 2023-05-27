@@ -10,7 +10,12 @@
     font-size: large;
     box-sizing: border-box;
 }
-
+body{
+    height: 100vh;
+}
+.about{
+    margin: 5% 5%;
+}
 #logo{
     font-size: 45pt;
 }
@@ -24,6 +29,7 @@ h1{
 .container-fluid{
     padding: 0;
  }
+ 
 #home-hero{
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -79,10 +85,9 @@ input{
     width:600px;}
 
 .form{
-      width: 80%;
+      width: 60%;
       margin: 10% auto;
-      background-color: #2d2c2c;
-      color: #fff;
+      color: #101010;
       padding: 15px;
   }
 

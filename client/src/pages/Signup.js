@@ -53,9 +53,9 @@ const Signup = () => {
             <form onSubmit={handleFormSubmit} className="form">
             {error && <div className='bg-danger text-white p-2 opacity-75 text-center'>Signup failed</div>}
               <h2 className='text-secondary mb-2 text-center'>Signup</h2>
-            <label htmlFor="name">Username</label>
+            <label htmlFor="name" className='mb-2'>Username</label>
               <input
-                className="form-input"
+                className="form-input mb-2"
                 placeholder="Your username"
                 name="username"
                 type="username"
@@ -63,9 +63,9 @@ const Signup = () => {
                 value={formState.username}
                 onChange={handleChange}
               />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email" className='mb-2'>Email</label>
               <input
-                className="form-input"
+                className="form-input mb-2"
                 placeholder="Your email"
                 name="email"
                 type="email"
@@ -73,9 +73,9 @@ const Signup = () => {
                 value={formState.email}
                 onChange={handleChange}
               />
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password" className='mb-2'>Password</label>
               <input
-                className="form-input"
+                className="form-input mb-2"
                 placeholder="******"
                 name="password"
                 type="password"
