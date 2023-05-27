@@ -95,6 +95,9 @@ const Signup = () => {
             </div>
         </div>
     </main>
+    <br></br>
+      <br></br>
+      <br></br>
     <Footer/>
     </>
   );

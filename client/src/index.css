@@ -62,8 +62,9 @@ button{
     margin: 1%;
     
 }
-
-
+.p-2{
+    margin-top: 5%;
+}
 input{
     width: 100%;
     padding: 8px;
@@ -105,16 +106,18 @@ input{
   
   /* Create four equal columns that sits next to each other */
   #col {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 32%;
+    margin: 5px;
     padding: 0 4px;
   }
   
   #col img {
-    margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px grey;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
