@@ -41,7 +41,8 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4 mt-2">
+    <>
+    <main className="d-flex justify-center mb-4 mt-2">
       <div className="col-12 col-md-6 mx-auto">
           <div className="card-body">
             <form onSubmit={handleFormSubmit} className="form">
@@ -76,12 +77,12 @@ const Login = (props) => {
             </form>
           </div>
         </div>
-        <br></br>
-      <br></br>
-      <br></br>
-        <Footer/>
-      
     </main>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer/>
+      </>
   );
 };
 

@@ -103,7 +103,24 @@ input{
     flex-wrap: wrap;
     padding: 0 4px;
   }
-  
+  .well-block {
+    background-color: #fff;
+    border: 1px solid #e9e6e8;
+    padding: 40px;
+}
+
+.well-title {
+    margin-bottom: 40px;
+}
+.submit{
+    color: #f4f1f1;
+    background-color: rgb(168, 170, 170);
+}
+.calendar{
+   margin: 10% auto;
+     
+   
+}
   /* Create four equal columns that sits next to each other */
   #col {
     -ms-flex: 33%; /* IE10 */

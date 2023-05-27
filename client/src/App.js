@@ -19,7 +19,6 @@ import Gallery from './pages/Gallery';
 import Booking from './pages/Booking';
 
 
-
 const httpLink = createHttpLink({
   uri: '/graphql',
 });

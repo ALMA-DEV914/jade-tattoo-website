@@ -15,7 +15,7 @@ const ThoughtList = ({ thoughts, title}) => {
         thoughts.map(thought => (
           <div key={thought._id} className="card mb-3">
             <p className="card-header">
-              <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="profile" id='profile'></img>
+              <img src="https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png" alt="profile" id='profile'></img>
               <Link
                 to={`/profile/${thought.username}`}
                 style={{ fontWeight: 700 }}

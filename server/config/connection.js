@@ -6,5 +6,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jade-tattoo-web
   useCreateIndex: true,
   useFindAndModify: false
 });
+console.log("Connected to Mongodb")
 
 module.exports = mongoose.connection;
